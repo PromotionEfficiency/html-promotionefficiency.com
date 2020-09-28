@@ -145,8 +145,6 @@ section#whyus .content .left:after{
   mix-blend-mode:darken;
 }
 
-
-
 section#whyus .content .same-height{
   min-height:300px;
 }
@@ -155,8 +153,84 @@ section#whyus .content .empty{
   min-height:150px;
 }
 
+#getstarted {
+  background-color: #ffffff;
+}
+
+h4.title {
+  font-size: 45px;
+  color: #242C35;
+}
+
+#whyclients {
+  background-color: #ffffff;
+}
 
 
+
+#ourclients {
+  background-color: #ffffff;
+  padding-right: 15em;
+  padding-left: 15em;
+}
+h1.a {
+  font-size: 45px;
+  color: #242C35;
+}
+h6.b {
+  font-size: 12px;
+  color: #949494;
+}
+.center {
+  display: block;
+  margin:auto;
+  width: 190px;
+  height: 190px;
+}
+#logos {
+  opacity: 0.5;
+}
+
+#contact {
+  background-color: #464838;
+  font-size: 14px;
+  font-weight:light;
+}
+
+#name, #email, #website, #phonenumber, #business, #message {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline:none;
+  box-shadow:none;
+  font-size: 15px;
+  font-weight:light;
+  color: white
+}
+
+form {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+#contact .btn.btn-primary{
+  background-color: #B8D432;
+  color:white;
+  font-weight: bold;
+  font-size:15px;
+  margin-top: 35px;
+  padding: 10px 25px 10px 25px;
+}
+
+section h3{
+  font-size:45px;
+  color: #B8D432;
+}
+section h5{
+  font-size:45px;
+  color: #ffffff;
+  margin-bottom: 77px;
+
+}
 section h2{
   font-size:60px;
   line-height: 1.2;
@@ -185,7 +259,6 @@ footer{
   font-weight:light;
   line-height:1.8;
 }
-
 
 footer h6{
   font-weight:bold;
