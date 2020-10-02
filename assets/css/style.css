@@ -160,8 +160,7 @@ section#getstarted {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-h4.get2 {
+h2.get2 {
   color: #242C35;
 }
 .btn-success {
@@ -178,23 +177,29 @@ h4.get2 {
 }
 
 section#insight {
-  height: 100vh;
+  height: 110vh;
   background-color: #292929;
   background-image: url("../imgs/insight_dot_map.png") ;
   background-position: center;
-  background-attachment: relative;
-
-
+  background-attachment: cover;
 }
+
+section#insight .row {
+  display: block;
+  padding-top: 7em;
+  padding-right: 5em;
+  padding-left: 5em;
+  size: 70;
+}
+
 
 #whyclients {
   height: 100vh;
   background-color: #ffffff;
   background-image: url("../imgs/truck.png");
-  background-position: relative;
   background-size: cover;
+  padding: 5rem 5rem 5rem 30rem;
 }
-
 #whyclients .btn-primary{
   background-color: #B8D432;
   color:#464838;
@@ -202,7 +207,16 @@ section#insight {
   font-size:15px;
   margin-top: 35px;
   padding: 10px 35px 10px 35px;
+  position: left;
 
+}
+
+section#blog {
+  height: 150vh;
+  background-color: #ffffff;
+}
+section#blog .btn-dark {
+  background-color:#464838;
 }
 
 
@@ -211,6 +225,8 @@ section#insight {
   padding-right: 15em;
   padding-left: 15em;
 }
+
+
 h2.a {
   color: #242C35;
 }
@@ -226,7 +242,7 @@ h2.a {
 }
 
 section#blog {
-  height: 100vh;
+  height: 110vh;
   background-color: #ffffff;
 
 }
@@ -234,6 +250,16 @@ section#blog {
 section#blog .card-deck {
   padding-left: 15em;
   padding-right: 15em;
+}
+
+section#news {
+  height: 110vh;
+  background-color: #ffffff;
+
+}
+section#ourteam {
+  background-color: #464838;
+
 }
 #contact {
   background-color: #464838;
