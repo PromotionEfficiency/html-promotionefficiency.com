@@ -1,24 +1,24 @@
 # Promotion Efficiency Website
 
 This repo will hold all the content for [Promotion Efficiency](https://www.promoe.com.sa) 
-> DO NOT VISIT JUST YET, IT IS STILL WORK IN PROGRESS
-
+> DO NOT VISIT JUST YET, IT IS STILL WORK IN PROGRESS  
+  
 
 ## Current Features
 
 - Twitter Bootstrap
-- Font Awsome
-
+- Font Awsome  
+  
 
 ## TODO
 
-- [Visit TODO.md](TODO.md)
-
+- [Visit TODO.md](TODO.md)  
+  
 
 ## Design By
 
-- [Jenabs](https://99designs.com/profiles/903355) - UI / UX Designer
-
+- [Jenabs](https://99designs.com/profiles/903355) - UI / UX Designer  
+  
 
 ## CONTRIBUTERS
 
