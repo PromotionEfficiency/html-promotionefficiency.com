@@ -2,6 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 
+
+.mt-6,
+.my-6 {
+  margin-top: 5rem !important;
+}
+
+.mr-6,
+.mx-6 {
+  margin-right: 5rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 5rem !important;
+}
+
+.ml-6,
+.mx-6 {
+  margin-left: 5rem !important;
+}
+
 section:nth-child(odd){
   background-color: grey;
 }
@@ -153,133 +174,362 @@ section#whyus .content .empty{
   min-height:150px;
 }
 
-section#getstarted {
-  height: 100vh;
-  background-color: #ffffff;
-  background-image: url("../imgs/getstarted.png") ;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-h2.get2 {
-  color: #242C35;
-}
-.btn-success {
-  background-color: #B8D432;
-  font-size: 15px;
-  color: #464838;
-  border: none;
-}
-.btn-danger{
-  font-size: 15px;
-  color: #ffffff;
-  border: none;
-
-}
-
-section#insight {
-  height: 110vh;
-  background-color: #292929;
-  background-image: url("../imgs/insight_dot_map.png") ;
-  background-position: center;
-  background-attachment: cover;
-}
-
-section#insight .row {
-  display: block;
-  padding-top: 7em;
-  padding-right: 5em;
-  padding-left: 5em;
-  size: 70;
-}
-
-
 #whyclients {
-  height: 100vh;
   background-color: #ffffff;
-  background-image: url("../imgs/truck.png");
-  background-size: cover;
-  padding: 5rem 5rem 5rem 30rem;
-}
-#whyclients .btn-primary{
-  background-color: #B8D432;
-  color:#464838;
-  font-weight: bold;
-  font-size:15px;
-  margin-top: 35px;
-  padding: 10px 35px 10px 35px;
-  position: left;
-
-}
-
-section#blog {
-  height: 150vh;
-  background-color: #ffffff;
-}
-section#blog .btn-dark {
-  background-color:#464838;
 }
 
 
 #ourclients {
   background-color: #ffffff;
-  padding-right: 15em;
-  padding-left: 15em;
 }
-
-
-h2.a {
+div.a {
+  font-size: 45px;
   color: #242C35;
 }
-
-.center {
-  display: block;
-  margin:auto;
-  width: 190px;
-  height: 190px;
-}
-#logos {
-  opacity: 0.5;
+div.b {
+  font-size: 12px;
+  font-weight: bold;
+  color: #949494;
 }
 
-section#blog {
-  height: 110vh;
-  background-color: #ffffff;
-
-}
-
-section#blog .card-deck {
-  padding-left: 15em;
-  padding-right: 15em;
-}
-
-section#news {
-  height: 110vh;
-  background-color: #ffffff;
-
-}
-section#ourteam {
+section#ourteam{
   background-color: #464838;
+}
+section#video{
+  background-color: white;
+  height:50vh;
+  border:1px solid green;
+}
+
+section#video .youtube-video{
+  position: relative;
+  background-position:  center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index:1;
+}
+
+section#video .youtube-video a{
+  z-index:5;
+  position: relative;
+}
+
+section#video .youtube-video::after{
+  content: '';
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,0,.60);
+  z-index:2
+}
+
+section#video .row{
+ height:100%;
+}
+
+section#getstarted{
+  background-color:white;
+  background-position:  center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height:100vh;
+}
+
+section#getstarted .btn.btn-success{
+  background-color: #B8D432;
+}
+
+section#getstarted .btn.btn-danger{
+  background-color: #DB4949;
+}
+
+
+section#insight{
+  background-color: #292929;
+  background-position:  50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+section#insight .card{
+  background-position:  -200% 0%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height:8rem;
+}
+
+section#insight .card h4{
+  font-weight:bold;
+  font-size:52px;
+  margin:0;
+  padding:0;
+}
+
+section#insight .card.clients h4{
+  color: #27A6A1;
+}
+
+section#insight .card.employees h4{
+  color: #4A6CB3;
+}
+
+section#insight .card.campaigns h4{
+  color: #B84F89;
+}
+
+section#insight .card.hours h4{
+  color: #C99F6B;
+}
+
+section#insight .card small{
+  color: #6E757D;
+  font-size:14px;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+}
+
+
+section#whyclients{
+  background-image: url("../imgs/testimonials-bg.png");
+  background-position: left center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  min-height:300px;
+}
+
+section#whyclients .testimonials p::before{
+  content: "“ ";
+}
+
+section#whyclients .testimonials p::after{
+  content: " “";
+}
+
+section#whyclients .btn.btn-primary{
+  background-color: #B8D432;
+  font-size:1em;
+}
+
+section#blog{
+  background-color: white;
+}
+
+section#blog .card{
+  background-color: #EEF1F3;
+}
+
+
+
+section#blog .card-title{
+  font-size:24px;
+}
+
+section#blog .card-text{
+  font-size:16px;
+}
+
+
+
+section#blog .card:hover{
+  background-color:white;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  -moz-transform: translate(0, -12px);
+  -ms-transform: translate(0, -12px);
+  -o-transform: translate(0, -12px);
+  -webkit-transform: translate(0, -12px);
+  transform: translate(0, -12px);
+  transition: all 500ms;
+}
+
+section#blog .card:hover .card-title{
+  color:#4A90E2 !important;
+  transition: all 500ms;
+}
+
+
+section#news{
+  background-color: white;
+  
+}
+section#news .btn.btn-primary{
+  background-color: #464838;
+  color:White;
+  font-weight: bold;
+  text-transform: uppercase;
+  border:none;
+}
+
+section#news .card-image{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:450px;
+}
+
+section#news .card-title{
+  color:#242C35;
+  font-size:24px;
+  font-weight: bold;
+}
+
+section#news h3 {
+  font-size: 36px;
+  color: #242C35;
+  font-weight: bold;
+}
+
+section#news .badge-light{
+  border:1px solid grey;
+  font-weight: light;
+}
+
+section#news .badge-light.blue{
+  border-color: #4A90E2;
+  color: #4A90E2;
+}
+
+section#news .badge-light.green{
+  border-color: #13888A;
+  color: #13888A;
+}
+
+section#news .badge-light.pink{
+  border-color: #973D83;
+  color: #973D83;
+}
+
+#ourteam .col h5{
+  font-size: 20px;
+  font-weight:bold;
+  color:white;
+}
+#ourteam .col p{
+  font-size: 18px;
+  font-weight:normal;
+  color:white;
+  position: relative;
+}
+#ourteam .col p::after{
+  content: " ";
+  background-color: #B8D432;
+  display: block;
+  position: absolute;
+  bottom:-24px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  height:7px;
+  width:25%;
+}
+
+
+#ourteam .member-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:25vw;
+  width:100%;
+}
+
+#ourteam .member-bg {
+  position: relative;
+}
+#ourteam .bio {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  color:White;
+  text-align: center;
+  width:100%;
+  height:100%;
+  background:black;
 
 }
+
+
+#ourteam .member-bg:hover .bio {
+  opacity: 0.75;
+}
+
+
+#ourteam .quote_mark {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+
+.separatorArrow{
+	
+  position:relative;
+}
+.separatorArrow:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    display: block;
+    z-index:-1;
+    position: absolute;
+    background-color: inherit;
+    margin-right: -15px;
+    top: 0%;
+    margin-top: -50px;
+    right: 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.quarter_logo{
+  z-index:2;
+  position:relative;
+}
+
+.vertical-center{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
 #contact {
   background-color: #464838;
+  font-size: 14px;
+  font-weight:light;
 }
 
-#name, #email, #website, #phonenumber, #business, #message {
+#contact .contact1{
+  color: #B8D331;
+}
+
+#contact ::placeholder{
+  color: #ffffff;  
+}
+
+#contact form .form-control{
   background: transparent;
   border: none;
   border-bottom: 1px solid #ffffff;
-  outline:none;
-  box-shadow:none;
   font-size: 15px;
   font-weight:light;
-  color: white
+  color: white;
+  border-radius: 0;
+
 }
 
-form {
-  padding-left: 100px;
-  padding-right: 100px;
+
+#contact form {
+  padding-left: 150px;
+  padding-right: 150px;
 }
+
 #contact .btn.btn-primary{
   background-color: #B8D432;
   color:white;
@@ -289,10 +539,16 @@ form {
   padding: 10px 25px 10px 25px;
 }
 
-section .contact1{
+section h3{
+  font-size:45px;
   color: #B8D432;
 }
+section h5{
+  font-size:45px;
+  color: #ffffff;
+  margin-bottom: 77px;
 
+}
 section h2{
   font-size:60px;
   line-height: 1.2;
