@@ -241,6 +241,101 @@ section#video .row{
  height:100%;
 }
 
+
+section#services .col{
+  min-height: 40vh;
+}
+
+section#services .col .card{
+  background-color:#F0F4CD;
+  position: relative;
+  height: 100%;
+
+}
+
+
+section#services .col:hover .card{
+  background-color: #e5ed9a;
+  -moz-transform: translate(0, -12px);
+  -ms-transform: translate(0, -12px);
+  -o-transform: translate(0, -12px);
+  -webkit-transform: translate(0, -12px);
+  transform: translate(0, -12px);
+  transition: all 300ms;
+}
+
+section#services .card img{
+  width: 50%;
+}
+
+section#services .card h4{
+  font-size: 100%;
+  font-weight: bold;
+  position: relative;
+}
+
+section#services .col h4::after{
+  content: " ";
+  background-color: #B8D432;
+  display: block;
+  position: absolute;
+  bottom:-24px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  height:7px;
+  width:25%;
+}
+
+
+
+section#work {
+  background-color: #DFE4E8;
+}
+
+
+
+
+section#work .member-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:20vw;
+  width:100%;
+}
+
+section#work .member-bg {
+  position: relative;
+}
+
+section#work .bio {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  color:White;
+  text-align: center;
+  width:100%;
+  height:100%;
+  background:black;
+}
+
+
+section#work .member-bg:hover .bio {
+  opacity: 0.50;
+  border-bottom:18px solid #B8D432;
+}
+
+
+section#work .quote_mark {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+
+
+
+
+
 section#getstarted{
   background-position:  center bottom;
   background-size: 100%;
