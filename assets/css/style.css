@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
-
-
 .mt-6,
 .my-6 {
   margin-top: 5rem !important;
@@ -43,24 +41,23 @@ h1{
   font-size: 3.5rem;
 }
 
-header{
+section#hero header{
   height:88px;
-  background:white;
+  z-index:7;
+  position: relative;
 }
 
-header nav{
+section#hero header nav{
   background-color: #464838;
 }
 
-header nav button span{
+section#hero header nav button span{
   color:white;
 }
 
 section#hero{
   height:100vh;
-  background-color: white;
   position:relative;
-  overflow:hidden;
 }
 
 section#hero .layer{
@@ -76,17 +73,14 @@ section#hero .layer{
 }
 
 section#hero .layer_1{
-  background-image: url('../imgs/hero/layer_1.png');
   z-index:1;
 }
 
 section#hero .layer_2{
-  background-image: url('../imgs/hero/layer_2.png');
   z-index:2;
 }
 
 section#hero .layer_3{
-  background-image: url('../imgs/hero/layer_3_200.png');
   z-index:3;
   width: 200%;
   background-size: cover;
@@ -101,12 +95,10 @@ section#hero .layer_3{
 }
 
 section#hero .layer_4{
-  background-image: url('../imgs/hero/layer_4.png');
   z-index:4;
 }
 
 section#hero .layer_5{
-  background-image: url('../imgs/hero/layer_5.png');
   z-index:5;
 }
 
@@ -119,12 +111,8 @@ section#hero .layer_5{
 
 
 section#whyus{
-  background-color:white;
 }
 
-section#whyus{
-  background-color:white;
-}
 
 section#whyus .icon span{
   color:#CECECE;
@@ -175,13 +163,8 @@ section#whyus .content .empty{
 }
 
 #whyclients {
-  background-color: #ffffff;
 }
 
-
-#ourclients {
-  background-color: #ffffff;
-}
 div.a {
   font-size: 45px;
   color: #242C35;
@@ -195,6 +178,35 @@ div.b {
 section#ourteam{
   background-color: #464838;
 }
+
+
+section#instagram{
+  height:60vh;
+}
+
+section#instagram .mobile{
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+section#instagram .text{
+  background-position: 100% -100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 section#video{
   background-color: white;
   height:50vh;
@@ -230,7 +242,6 @@ section#video .row{
 }
 
 section#getstarted{
-  background-color:white;
   background-position:  center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -293,7 +304,6 @@ section#insight .card small{
 
 
 section#whyclients{
-  background-image: url("../imgs/testimonials-bg.png");
   background-position: left center;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -308,20 +318,14 @@ section#whyclients .testimonials p::after{
   content: " “";
 }
 
-section#whyclients .btn.btn-primary{
-  background-color: #B8D432;
-  font-size:1em;
-}
+
 
 section#blog{
-  background-color: white;
 }
 
 section#blog .card{
   background-color: #EEF1F3;
 }
-
-
 
 section#blog .card-title{
   font-size:24px;
@@ -330,8 +334,6 @@ section#blog .card-title{
 section#blog .card-text{
   font-size:16px;
 }
-
-
 
 section#blog .card:hover{
   background-color:white;
@@ -351,15 +353,7 @@ section#blog .card:hover .card-title{
 
 
 section#news{
-  background-color: white;
   
-}
-section#news .btn.btn-primary{
-  background-color: #464838;
-  color:White;
-  font-weight: bold;
-  text-transform: uppercase;
-  border:none;
 }
 
 section#news .card-image{
@@ -505,9 +499,11 @@ section#news .badge-light.pink{
   font-weight:light;
 }
 
-#contact .contact1{
+section#contact h2 small{
   color: #B8D331;
+  font-size: 80%;
 }
+
 
 #contact ::placeholder{
   color: #ffffff;  
@@ -521,21 +517,28 @@ section#news .badge-light.pink{
   font-weight:light;
   color: white;
   border-radius: 0;
-
 }
-
 
 #contact form {
   padding-left: 150px;
   padding-right: 150px;
 }
 
-#contact .btn.btn-primary{
+.btn.btn-primary{
   background-color: #B8D432;
   color:white;
   font-weight: bold;
-  font-size:15px;
   margin-top: 35px;
+  font-size:1em;
+  border:none;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary.inverted{
+  background-color: #464838;
+}
+
+#contact .btn.btn-primary{
   padding: 10px 25px 10px 25px;
 }
 
@@ -561,9 +564,10 @@ section h2 small{
 
 
 section#ouraddress{
-  background-color: white;
 
 }
+
+
 
 section#ouraddress #map{
   height: 650px;
@@ -591,12 +595,12 @@ footer .social{
   font-size:1.3em;
 }
 
-footer form .btn.btn-primary{
-  background-color: #B8D432;
-  color:white;
-  font-size:1em;
-}
 
 footer form .form-control{
   font-size:1em;
+}
+
+
+.infected{
+  overflow: hidden;
 }

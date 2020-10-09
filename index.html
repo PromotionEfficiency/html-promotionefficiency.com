@@ -18,34 +18,35 @@
     <script src="https://kit.fontawesome.com/4a711290b8.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="mt-4 mb-5 container">
-      <nav class="navbar navbar-dark rounded-lg p-2 text-white">
-        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a class="navbar-brand mx-auto d-block text-center w-25" href="#">
-          <img src="assets/imgs/pe_logo_primary_dark_bg.svg" height="55" width="55" alt="Logo" loading="lazy">
-        </a>
-
-        <button class="navbar-toggler border-0" style="font-size:0.8em;" type="button">
-          <img src="assets/imgs/flags/us.svg" height="16" alt="English" >English <i class="fal fa-chevron-down"></i>
-        </button>
-      </nav>
-    </header>
+    
 
     <!-- HERO Section -->    
-    <section id="hero" class="py-5">
-      <div class="layer layer_1"></div>
-      <div class="layer layer_2"></div>
-      <div class="layer layer_3"></div>
-      <div class="layer layer_4"></div>
-      <div class="layer layer_5 animate__animated animate__shakeX animate__infinite"></div>
+    <section id="hero" class="py-5 bg-white overflow-hidden">
+      <header class="container">
+        <nav class="navbar navbar-dark rounded-lg p-2 text-white shadow">
+          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <a class="navbar-brand mx-auto d-block text-center w-25" href="#">
+            <img src="assets/imgs/pe_logo_primary_dark_bg.svg" height="55" width="55" alt="Logo" loading="lazy">
+          </a>
+  
+          <button class="navbar-toggler border-0" style="font-size:0.8em;" type="button">
+            <img src="assets/imgs/flags/us.svg" height="16" alt="English" > English <i class="fal fa-chevron-down"></i>
+          </button>
+        </nav>
+      </header>
+      <div class="layer layer_1" data-bg-src="assets/imgs/hero/layer_1.png"></div>
+      <div class="layer layer_2" data-bg-src="assets/imgs/hero/layer_2.png"></div>
+      <div class="layer layer_3" data-bg-src="assets/imgs/hero/layer_3.png"></div>
+      <div class="layer layer_4" data-bg-src="assets/imgs/hero/layer_4.png"></div>
+      <div class="layer layer_5 animate__animated animate__shakeX animate__infinite" data-bg-src="assets/imgs/hero/layer_5.png"></div>
       <h1 class="text-center" style="z-index:6; position:relative;">Your <strong>Hike</strong> to <strong>PEAK!</strong></h1>
     </section>
 
     <!-- Why Us Section -->
-    <section id="whyus" class="py-5">
+    <section id="whyus" class="py-5 bg-white">
       <div class="container">
         <h2 class="text-center mb-5">
           <small class="text-muted"><strong>What people know about us</strong></small><br />
@@ -93,8 +94,8 @@
     </section>
 
     <!-- Youtube Video Section -->
-    <section id="video">
-      <div class="row">
+    <section id="video" class="">
+      <div class="row mx-0"><!-- it overflows because it is not inside a contianer thus adding mx-0 -->
         <div class="col-md-4 offset-md-1 py-5 px-5 text-right">
           <h2 class="insight2 text-dark mb-5 pb-2">
             <small class="text-muted mt-5"><strong>STOP MOTION</strong></small><br />
@@ -127,7 +128,7 @@
     <section id="work" class="py-5">Blank Section</section>
 
     <!-- Get Started Section -->
-    <section id="getstarted" class="py-5 text-center separatorArrow" data-bg-src="assets/imgs/getstarted.png">
+    <section id="getstarted" class="py-5 text-center separatorArrow bg-white" data-bg-src="assets/imgs/getstarted.png">
       <div class="container">
         <img src="assets/imgs/greendivider.png" height="80"  class="pt-3">  
         
@@ -217,8 +218,8 @@
     </section>
 
     <!-- Blog Posts Section -->
-    <section id="whyclients" class="">
-      <div class="row">
+    <section id="whyclients" class="bg-white" data-bg-src="assets/imgs/testimonials-bg.png">
+      <div class="row mx-0"><!-- it overflows because it is not inside a contianer thus adding mx-0 -->
         <div class="col-md-6 offset-5 my-6 bg-white p-5 shadow">
           
           <h2><small class="text-muted"><strong>TESTIMONIALS</strong></small><br />
@@ -236,7 +237,7 @@
     </section>
 
     <!-- Blog Posts Section -->
-    <section id="blog" class="py-5 text-center">
+    <section id="blog" class="py-5 text-center bg-white">
       <div class="container">
         <img src="assets/imgs/greendivider.png"   height="60"> 
         <h2 class="text-center mb-5 pb-5">
@@ -282,7 +283,7 @@
     </section>
 
     <!-- News Section -->
-    <section id="news" class="py-5 text-center">
+    <section id="news" class="py-5 text-center bg-white">
       <img src="assets/imgs/greendivider.png"   height="60">      
           <h2 class="text-center mb-5 pb-5">
             <small class="text-muted"><strong>OUR LATEST NEWS</strong></small><br />
@@ -297,7 +298,7 @@
                     <span class="badge badge-light py-2 px-4 border">Lifestyle</span>
                     <h5 class="card-title my-4 text-dark">Card title</h5>
                     <p class="card-text pt-2"><small class="text-muted"> December 10 , 2017     By : Jhon Doe</small><div>Some quick example text to build on the card title and make up the bulk of the card's content.</div></p>
-                    <a href="#" class="btn btn-primary mt-4 mb-5 py-2 px-4">Go somewhere</a>
+                    <a href="#" class="btn btn-primary inverted mt-4 mb-5 py-2 px-4">Go somewhere</a>
                   </div>
                 </div>
               </div>
@@ -359,11 +360,13 @@
     </section>
 
     <!-- Clients Section -->
-    <section id="ourclients" class="py-5">
+    <section id="ourclients" class="py-5 bg-white">
       <div class="container text-center py-5">
-        <img src="assets/imgs/greendivider.png"   height="80"  class=" pb-3">      
-        <h2 class="a">Our<strong> Clients</strong></h2>
-        <small class="text-muted "><strong> WE ARE PROUD TO SERVE</strong></small>
+        <img src="assets/imgs/greendivider.png" height="80" class="pb-3">  
+        
+        <h2><strong>Clients</strong><br />
+          <small class="text-muted"><strong>WE ARE PROUD TO SERVE</strong></small>
+        </h2>
 
         <div class="row text-center">
           <div class="col-md-2"><img src="assets/imgs/clientlogos/Group 3.svg" class=""></div>
@@ -401,8 +404,8 @@
         </h2>
       </div>
 
-      <div class="ourteam row">
-        <div class="col col-md-3 ">
+      <div class="ourteam row mx-0 mb-5"><!-- it overflows because it is not inside a contianer thus adding mx-0 -->
+        <div class="col col-md-3 px-0">
           <div class="member-bg" data-bg-src="assets/imgs/team1.svg">
             <div class="bio p-4 ">
               <div class="vertical-center">
@@ -413,27 +416,11 @@
               </div>
             </div>
           </div>
-          <h5 class="text-center my-3">Justin Sebastian</h5>
+          <h5 class="text-center mt-5 mb-3">Justin Sebastian</h5>
           <p class="text-center">Web Developer</p>
         </div>
 
-        <div class="col col-md-3 ">
-          <div class="member-bg" data-bg-src="assets/imgs/team1.svg">
-            <div class="bio p-4 ">
-              <div class="vertical-center">
-                <div class="quote_mark text-left">“</div>
-                <div class="text-center">Dave is from Dammam, he likes birds, he is also a Digital media artist that is highly skilled on
-                  photoshop, illustrator, typography.</div>
-                <div class="quote_mark text-right">“</div>
-              </div>
-              
-            </div>
-          </div>
-          <h5 class="text-center my-3">Justin Sebastian</h5>
-          <p class="text-center">Web Developer</p>
-        </div>
-
-        <div class="col col-md-3 ">
+        <div class="col col-md-3 px-0">
           <div class="member-bg" data-bg-src="assets/imgs/team1.svg">
             <div class="bio p-4 ">
               <div class="vertical-center">
@@ -444,11 +431,11 @@
               </div>
             </div>
           </div>
-          <h5 class="text-center my-3">Justin Sebastian</h5>
+          <h5 class="text-center mt-5 mb-3">Justin Sebastian</h5>
           <p class="text-center">Web Developer</p>
         </div>
-        
-        <div class="col col-md-3 ">
+
+        <div class="col col-md-3 px-0">
           <div class="member-bg" data-bg-src="assets/imgs/team1.svg">
             <div class="bio p-4 ">
               <div class="vertical-center">
@@ -457,28 +444,55 @@
                   photoshop, illustrator, typography.</div>
                 <div class="quote_mark text-right">“</div>
               </div>
-              
             </div>
           </div>
-          <h5 class="text-center my-3">Justin Sebastian</h5>
+          <h5 class="text-center mt-5 mb-3">Justin Sebastian</h5>
           <p class="text-center">Web Developer</p>
         </div>
 
-
-
+        <div class="col col-md-3 px-0">
+          <div class="member-bg" data-bg-src="assets/imgs/team1.svg">
+            <div class="bio p-4 ">
+              <div class="vertical-center">
+                <div class="quote_mark text-left">“</div>
+                <div class="text-center">Dave is from Dammam, he likes birds, he is also a Digital media artist that is highly skilled on
+                  photoshop, illustrator, typography.</div>
+                <div class="quote_mark text-right">“</div>
+              </div>
+            </div>
+          </div>
+          <h5 class="text-center mt-5 mb-3">Justin Sebastian</h5>
+          <p class="text-center">Web Developer</p>
+        </div>
       </div>
-    
-
     </section>
 
     <!-- Instagram Section -->
-    <section id="instagram" class="py-5">Blank Section</section>
+    <section id="instagram" class="bg-white pt-5 mt-5">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="offset-1 col-md-6 pt-5 text-right h-100 text pr-5" data-bg-src="assets/imgs/instagram/bg.png">
+            <h2 class="mb-5">
+              Visit Our <strong>Instagram</strong><br />
+              <small class="text-muted"><strong>To see more our work!</strong></small>
+            </h2>
+            <a href="#" role="button" class="btn btn-primary border-0 my-4 px-5 py-3">Click Here</a>
+  
+          </div>
+          <div class="col-md-5 mobile h-100" data-bg-src="assets/imgs/instagram/mobile.png"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Us Section -->
     <section id="contact" class="py-5 text-white">
       <div class="container text-center">
-        <h2 class="contact1">Contact<strong> Us</strong></h2>
-        <h2 class="text-white pb-5">Ready to start a<strong> project?</strong></h2>
+        <h2 class="mb-5">
+          <small class="">Contact <strong>Us</strong></small><br />
+          Ready to start your<strong> project?</strong>
+        </h2>
+
+
         <form>
           <div class="form-group ">
             <input type="name" class="form-control" id="name" placeholder="Name" name="name">
@@ -514,17 +528,19 @@
     </section>
 
     <!-- Our Address Section -->
-    <section id="ouraddress">
+    <section id="ouraddress" class="bg-white">
 
-      <div class="row">
+      <div class="row mx-0"><!-- it overflows because it is not inside a contianer thus adding mx-0 -->
         <div class="col-3 offset-2 py-5">
-          <img src="assets/imgs/greendivider.png"   height="60">      
-          <h5 class="text-muted pt-4"><strong></strong>ADDRESS</strong></h5>
-          <h2 class="py-3">We are very close <strong>to you</strong></h2>
-          <h6><strong>KHOBAR</strong></h6>
-          <p><small><address>T4405 Mall Blvd. STE 140 Union City, GA 30291   |   404.795.4235</address></small></p>
+          <img src="assets/imgs/greendivider.png" height="60">     
+          
+          <h2 class="mb-5">
+            <small class="text-muted"><strong>ADDRESS</strong></small><br />
+            We are very close <strong>to you</strong>
+          </h2>
+          <address><strong>KHOBAR</strong><br />T4405 Mall Blvd. STE 140 Union City, GA 30291   |   404.795.4235</address>
         </div>
-        <div class="col-7">
+        <div class="col-7 pr-0">
           <div id="map"></div>
         </div>
 
