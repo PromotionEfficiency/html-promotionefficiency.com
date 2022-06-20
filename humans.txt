@@ -1,0 +1,18 @@
+/* BACKSTAGE */
+Promotion Efficiency CEO: Adel Omer
+From: Khobar, Saudi Arabia
+Twitter: @promoefficiency
+6 Degrees: https://www.6d.com.sa
+/* SITE */
+Last update: 06/20/2022
+Standards: HTML5, CSS3, Javascript
+Components: VueJs
+Software: NuxtJs
+Language: English/Arabic
+Doctype: HTML5
+
+/* BACKSTAGE */
+HumansTxt Plugin developer: Luca Iaconelli
+From: Faenza, Italy
+Twitter: @luxdamore
+Instagram: https://www.instagram.com/luxdamore
