@@ -4,7 +4,7 @@ From: Khobar, Saudi Arabia
 Twitter: @promoefficiency
 6 Degrees: https://www.6d.com.sa
 /* SITE */
-Last update: 06/20/2022
+Last update: 06/21/2022
 Standards: HTML5, CSS3, Javascript
 Components: VueJs
 Software: NuxtJs
