@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /thanks
-Disallow: /ar/thanks
-Disallow: /en/thanks
+Disallow: /
